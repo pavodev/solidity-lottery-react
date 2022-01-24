@@ -1,13 +1,11 @@
 import web3 from "./web3";
 
-const address = "0x07c052b6d0520572f1415b2d5e2e548da8229006";
+const address = "0x0bFC12afE8425a95732C2A0c076FBbeE3071964D";
 const abi = [
   {
     inputs: [],
     stateMutability: "nonpayable",
     type: "constructor",
-    constant: undefined,
-    payable: undefined,
     signature: "constructor",
   },
   {
@@ -16,28 +14,25 @@ const abi = [
     outputs: [],
     stateMutability: "payable",
     type: "function",
-    constant: undefined,
     payable: true,
     signature: "0xe97dcb62",
   },
   {
     inputs: [],
     name: "getPlayers",
-    outputs: [[Object]],
+    outputs: [{ internalType: "address[]", name: "", type: "address[]" }],
     stateMutability: "view",
     type: "function",
     constant: true,
-    payable: undefined,
     signature: "0x8b5b9ccc",
   },
   {
     inputs: [],
     name: "manager",
-    outputs: [[Object]],
+    outputs: [{ internalType: "address", name: "", type: "address" }],
     stateMutability: "view",
     type: "function",
     constant: true,
-    payable: undefined,
     signature: "0x481c6a75",
   },
   {
@@ -46,18 +41,15 @@ const abi = [
     outputs: [],
     stateMutability: "nonpayable",
     type: "function",
-    constant: undefined,
-    payable: undefined,
     signature: "0x5d495aea",
   },
   {
-    inputs: [[Object]],
+    inputs: [{ internalType: "uint256", name: "", type: "uint256" }],
     name: "players",
-    outputs: [[Object]],
+    outputs: [{ internalType: "address", name: "", type: "address" }],
     stateMutability: "view",
     type: "function",
     constant: true,
-    payable: undefined,
     signature: "0xf71d96cb",
   },
 ];
